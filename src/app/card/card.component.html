@@ -1,0 +1,10 @@
+<p>
+  <img [src]="user.photo">
+  {{user.firstName}}
+  {{user.name}}</p>
+  <p [hidden]='this.hidden'>{{user.age}}</p>
+  <p>
+  <button (click)="isHidden()"> hidde age</button>
+  {{user.quote}}
+  <input [(ngModel)] = "user.quote">
+</p>
